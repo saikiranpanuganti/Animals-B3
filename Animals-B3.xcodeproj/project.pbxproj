@@ -15,6 +15,18 @@
 		7F4F2DD128671F1D00783ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4F2DCF28671F1D00783ABC /* LaunchScreen.storyboard */; };
 		7F4F2DD9286721BC00783ABC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F2DD8286721BC00783ABC /* TabBarViewController.swift */; };
 		7F4F2DDB286721DE00783ABC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F2DDA286721DE00783ABC /* SplashViewController.swift */; };
+		7F58507B2869E63E00AD0EEC /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850792869E63E00AD0EEC /* BrowseViewController.swift */; };
+		7F58507C2869E63E00AD0EEC /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F58507A2869E63E00AD0EEC /* BrowseViewController.xib */; };
+		7F5850822869E66500AD0EEC /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850802869E66500AD0EEC /* WatchViewController.swift */; };
+		7F5850832869E66500AD0EEC /* WatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850812869E66500AD0EEC /* WatchViewController.xib */; };
+		7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850852869E67800AD0EEC /* LocationsViewController.swift */; };
+		7F5850882869E67800AD0EEC /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850862869E67800AD0EEC /* LocationsViewController.xib */; };
+		7F58508C2869E68D00AD0EEC /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58508A2869E68D00AD0EEC /* GalleryViewController.swift */; };
+		7F58508D2869E68D00AD0EEC /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F58508B2869E68D00AD0EEC /* GalleryViewController.xib */; };
+		7F5850932869EA5100AD0EEC /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F58508F2869EA5100AD0EEC /* locations.json */; };
+		7F5850942869EA5100AD0EEC /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850902869EA5100AD0EEC /* animals.json */; };
+		7F5850952869EA5100AD0EEC /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850912869EA5100AD0EEC /* videos.json */; };
+		7F5850962869EA5100AD0EEC /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850922869EA5100AD0EEC /* covers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +40,18 @@
 		7F4F2DD228671F1D00783ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F4F2DD8286721BC00783ABC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7F4F2DDA286721DE00783ABC /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		7F5850792869E63E00AD0EEC /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		7F58507A2869E63E00AD0EEC /* BrowseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowseViewController.xib; sourceTree = "<group>"; };
+		7F5850802869E66500AD0EEC /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
+		7F5850812869E66500AD0EEC /* WatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchViewController.xib; sourceTree = "<group>"; };
+		7F5850852869E67800AD0EEC /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		7F5850862869E67800AD0EEC /* LocationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
+		7F58508A2869E68D00AD0EEC /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		7F58508B2869E68D00AD0EEC /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		7F58508F2869EA5100AD0EEC /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		7F5850902869EA5100AD0EEC /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
+		7F5850912869EA5100AD0EEC /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
+		7F5850922869EA5100AD0EEC /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +89,64 @@
 				7F4F2DC828671F1C00783ABC /* ViewController.swift */,
 				7F4F2DD8286721BC00783ABC /* TabBarViewController.swift */,
 				7F4F2DDA286721DE00783ABC /* SplashViewController.swift */,
+				7F58508E2869EA4600AD0EEC /* JsonFiles */,
+				7F5850892869E67F00AD0EEC /* Gallery */,
+				7F5850842869E66C00AD0EEC /* Locations */,
+				7F58507D2869E64100AD0EEC /* Watch */,
+				7F4F2DE12869E5FC00783ABC /* Browse */,
 				7F4F2DCA28671F1C00783ABC /* Main.storyboard */,
 				7F4F2DCD28671F1D00783ABC /* Assets.xcassets */,
 				7F4F2DCF28671F1D00783ABC /* LaunchScreen.storyboard */,
 				7F4F2DD228671F1D00783ABC /* Info.plist */,
 			);
 			path = "Animals-B3";
+			sourceTree = "<group>";
+		};
+		7F4F2DE12869E5FC00783ABC /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				7F5850792869E63E00AD0EEC /* BrowseViewController.swift */,
+				7F58507A2869E63E00AD0EEC /* BrowseViewController.xib */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		7F58507D2869E64100AD0EEC /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				7F5850802869E66500AD0EEC /* WatchViewController.swift */,
+				7F5850812869E66500AD0EEC /* WatchViewController.xib */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		7F5850842869E66C00AD0EEC /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				7F5850852869E67800AD0EEC /* LocationsViewController.swift */,
+				7F5850862869E67800AD0EEC /* LocationsViewController.xib */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		7F5850892869E67F00AD0EEC /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				7F58508A2869E68D00AD0EEC /* GalleryViewController.swift */,
+				7F58508B2869E68D00AD0EEC /* GalleryViewController.xib */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		7F58508E2869EA4600AD0EEC /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7F5850902869EA5100AD0EEC /* animals.json */,
+				7F5850922869EA5100AD0EEC /* covers.json */,
+				7F58508F2869EA5100AD0EEC /* locations.json */,
+				7F5850912869EA5100AD0EEC /* videos.json */,
+			);
+			path = JsonFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +208,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4F2DD128671F1D00783ABC /* LaunchScreen.storyboard in Resources */,
+				7F5850962869EA5100AD0EEC /* covers.json in Resources */,
 				7F4F2DCE28671F1D00783ABC /* Assets.xcassets in Resources */,
+				7F5850932869EA5100AD0EEC /* locations.json in Resources */,
+				7F58507C2869E63E00AD0EEC /* BrowseViewController.xib in Resources */,
+				7F5850882869E67800AD0EEC /* LocationsViewController.xib in Resources */,
 				7F4F2DCC28671F1C00783ABC /* Main.storyboard in Resources */,
+				7F5850942869EA5100AD0EEC /* animals.json in Resources */,
+				7F5850952869EA5100AD0EEC /* videos.json in Resources */,
+				7F5850832869E66500AD0EEC /* WatchViewController.xib in Resources */,
+				7F58508D2869E68D00AD0EEC /* GalleryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,11 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F58507B2869E63E00AD0EEC /* BrowseViewController.swift in Sources */,
 				7F4F2DD9286721BC00783ABC /* TabBarViewController.swift in Sources */,
 				7F4F2DC928671F1C00783ABC /* ViewController.swift in Sources */,
+				7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */,
 				7F4F2DC528671F1C00783ABC /* AppDelegate.swift in Sources */,
 				7F4F2DC728671F1C00783ABC /* SceneDelegate.swift in Sources */,
+				7F58508C2869E68D00AD0EEC /* GalleryViewController.swift in Sources */,
 				7F4F2DDB286721DE00783ABC /* SplashViewController.swift in Sources */,
+				7F5850822869E66500AD0EEC /* WatchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
