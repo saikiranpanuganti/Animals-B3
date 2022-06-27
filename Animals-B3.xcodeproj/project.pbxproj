@@ -27,6 +27,17 @@
 		7F5850942869EA5100AD0EEC /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850902869EA5100AD0EEC /* animals.json */; };
 		7F5850952869EA5100AD0EEC /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850912869EA5100AD0EEC /* videos.json */; };
 		7F5850962869EA5100AD0EEC /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850922869EA5100AD0EEC /* covers.json */; };
+		7F58509A2869ED1B00AD0EEC /* AnimalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850982869ED1B00AD0EEC /* AnimalCollectionViewCell.swift */; };
+		7F58509B2869ED1B00AD0EEC /* AnimalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850992869ED1B00AD0EEC /* AnimalCollectionViewCell.xib */; };
+		7F58509D2869EEAA00AD0EEC /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58509C2869EEAA00AD0EEC /* BrowseView.swift */; };
+		7F58509F2869EFDC00AD0EEC /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58509E2869EFDC00AD0EEC /* Bundle+Extension.swift */; };
+		7F5850A12869F02900AD0EEC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850A02869F02900AD0EEC /* Animal.swift */; };
+		7F5850A32869F0F000AD0EEC /* BrowseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850A22869F0F000AD0EEC /* BrowseModel.swift */; };
+		7FF0DFA92869F59400C94F5B /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0DFA72869F59400C94F5B /* HeroCollectionViewCell.swift */; };
+		7FF0DFAA2869F59400C94F5B /* HeroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF0DFA82869F59400C94F5B /* HeroCollectionViewCell.xib */; };
+		7FF0DFAE2869F6ED00C94F5B /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0DFAC2869F6ED00C94F5B /* ImageCollectionViewCell.swift */; };
+		7FF0DFAF2869F6ED00C94F5B /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF0DFAD2869F6ED00C94F5B /* ImageCollectionViewCell.xib */; };
+		7FF0DFB12869FA7D00C94F5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0DFB02869FA7D00C94F5B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +63,17 @@
 		7F5850902869EA5100AD0EEC /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		7F5850912869EA5100AD0EEC /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		7F5850922869EA5100AD0EEC /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
+		7F5850982869ED1B00AD0EEC /* AnimalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F5850992869ED1B00AD0EEC /* AnimalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F58509C2869EEAA00AD0EEC /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		7F58509E2869EFDC00AD0EEC /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		7F5850A02869F02900AD0EEC /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		7F5850A22869F0F000AD0EEC /* BrowseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseModel.swift; sourceTree = "<group>"; };
+		7FF0DFA72869F59400C94F5B /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FF0DFA82869F59400C94F5B /* HeroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCollectionViewCell.xib; sourceTree = "<group>"; };
+		7FF0DFAC2869F6ED00C94F5B /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FF0DFAD2869F6ED00C94F5B /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		7FF0DFB02869FA7D00C94F5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +111,8 @@
 				7F4F2DC828671F1C00783ABC /* ViewController.swift */,
 				7F4F2DD8286721BC00783ABC /* TabBarViewController.swift */,
 				7F4F2DDA286721DE00783ABC /* SplashViewController.swift */,
+				7F58509E2869EFDC00AD0EEC /* Bundle+Extension.swift */,
+				7FF0DFB02869FA7D00C94F5B /* Constants.swift */,
 				7F58508E2869EA4600AD0EEC /* JsonFiles */,
 				7F5850892869E67F00AD0EEC /* Gallery */,
 				7F5850842869E66C00AD0EEC /* Locations */,
@@ -107,6 +131,12 @@
 			children = (
 				7F5850792869E63E00AD0EEC /* BrowseViewController.swift */,
 				7F58507A2869E63E00AD0EEC /* BrowseViewController.xib */,
+				7F58509C2869EEAA00AD0EEC /* BrowseView.swift */,
+				7F5850A22869F0F000AD0EEC /* BrowseModel.swift */,
+				7F5850A02869F02900AD0EEC /* Animal.swift */,
+				7FF0DFAB2869F6DC00C94F5B /* Image */,
+				7F5850A42869F54900AD0EEC /* HeroCell */,
+				7F5850972869ED0200AD0EEC /* AnimalCell */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -147,6 +177,33 @@
 				7F5850912869EA5100AD0EEC /* videos.json */,
 			);
 			path = JsonFiles;
+			sourceTree = "<group>";
+		};
+		7F5850972869ED0200AD0EEC /* AnimalCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F5850982869ED1B00AD0EEC /* AnimalCollectionViewCell.swift */,
+				7F5850992869ED1B00AD0EEC /* AnimalCollectionViewCell.xib */,
+			);
+			path = AnimalCell;
+			sourceTree = "<group>";
+		};
+		7F5850A42869F54900AD0EEC /* HeroCell */ = {
+			isa = PBXGroup;
+			children = (
+				7FF0DFA72869F59400C94F5B /* HeroCollectionViewCell.swift */,
+				7FF0DFA82869F59400C94F5B /* HeroCollectionViewCell.xib */,
+			);
+			path = HeroCell;
+			sourceTree = "<group>";
+		};
+		7FF0DFAB2869F6DC00C94F5B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7FF0DFAC2869F6ED00C94F5B /* ImageCollectionViewCell.swift */,
+				7FF0DFAD2869F6ED00C94F5B /* ImageCollectionViewCell.xib */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,12 +266,15 @@
 			files = (
 				7F4F2DD128671F1D00783ABC /* LaunchScreen.storyboard in Resources */,
 				7F5850962869EA5100AD0EEC /* covers.json in Resources */,
+				7F58509B2869ED1B00AD0EEC /* AnimalCollectionViewCell.xib in Resources */,
+				7FF0DFAA2869F59400C94F5B /* HeroCollectionViewCell.xib in Resources */,
 				7F4F2DCE28671F1D00783ABC /* Assets.xcassets in Resources */,
 				7F5850932869EA5100AD0EEC /* locations.json in Resources */,
 				7F58507C2869E63E00AD0EEC /* BrowseViewController.xib in Resources */,
 				7F5850882869E67800AD0EEC /* LocationsViewController.xib in Resources */,
 				7F4F2DCC28671F1C00783ABC /* Main.storyboard in Resources */,
 				7F5850942869EA5100AD0EEC /* animals.json in Resources */,
+				7FF0DFAF2869F6ED00C94F5B /* ImageCollectionViewCell.xib in Resources */,
 				7F5850952869EA5100AD0EEC /* videos.json in Resources */,
 				7F5850832869E66500AD0EEC /* WatchViewController.xib in Resources */,
 				7F58508D2869E68D00AD0EEC /* GalleryViewController.xib in Resources */,
@@ -229,11 +289,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F58507B2869E63E00AD0EEC /* BrowseViewController.swift in Sources */,
+				7FF0DFB12869FA7D00C94F5B /* Constants.swift in Sources */,
 				7F4F2DD9286721BC00783ABC /* TabBarViewController.swift in Sources */,
+				7FF0DFAE2869F6ED00C94F5B /* ImageCollectionViewCell.swift in Sources */,
 				7F4F2DC928671F1C00783ABC /* ViewController.swift in Sources */,
+				7F5850A12869F02900AD0EEC /* Animal.swift in Sources */,
 				7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */,
+				7F58509A2869ED1B00AD0EEC /* AnimalCollectionViewCell.swift in Sources */,
 				7F4F2DC528671F1C00783ABC /* AppDelegate.swift in Sources */,
+				7F5850A32869F0F000AD0EEC /* BrowseModel.swift in Sources */,
 				7F4F2DC728671F1C00783ABC /* SceneDelegate.swift in Sources */,
+				7F58509F2869EFDC00AD0EEC /* Bundle+Extension.swift in Sources */,
+				7FF0DFA92869F59400C94F5B /* HeroCollectionViewCell.swift in Sources */,
+				7F58509D2869EEAA00AD0EEC /* BrowseView.swift in Sources */,
 				7F58508C2869E68D00AD0EEC /* GalleryViewController.swift in Sources */,
 				7F4F2DDB286721DE00783ABC /* SplashViewController.swift in Sources */,
 				7F5850822869E66500AD0EEC /* WatchViewController.swift in Sources */,

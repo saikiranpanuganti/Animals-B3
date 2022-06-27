@@ -8,22 +8,20 @@
 import UIKit
 
 class BrowseViewController: UIViewController {
+    @IBOutlet weak var browseView: BrowseView!
+    var browseModel: BrowseModel = BrowseModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        browseView.setUpUI()
+        browseModel.getData()
+        
+        let animalsData = browseModel.animals
+        browseView.animals = animalsData
+        
+        let coverAnimalsData = browseModel.coverAnimals
+        browseView.coverAnimals = coverAnimalsData
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
