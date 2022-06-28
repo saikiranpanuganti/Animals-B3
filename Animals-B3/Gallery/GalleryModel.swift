@@ -1,13 +1,13 @@
 //
-//  BrowseModel.swift
+//  GalleryModel.swift
 //  Animals-B3
 //
-//  Created by Saikiran Panuganti on 27/06/22.
+//  Created by pampana ajay on 28/06/22.
 //
 
 import Foundation
 
-class BrowseModel {
+class GalleryModel {
     var animals: Animals = []
     var coverAnimals: Animals = []
     
