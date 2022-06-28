@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F3A6829286B3C1A0025418B /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A6827286B3C1A0025418B /* GalleryViewController.swift */; };
+		7F3A682A286B3C1A0025418B /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A6828286B3C1A0025418B /* GalleryViewController.xib */; };
+		7F3A682D286B3C240025418B /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A682B286B3C240025418B /* GalleryModel.swift */; };
+		7F3A682E286B3C240025418B /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A682C286B3C240025418B /* GalleryView.swift */; };
+		7F3A6832286B3C3B0025418B /* AnimalImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A6830286B3C3B0025418B /* AnimalImagesCollectionViewCell.xib */; };
+		7F3A6833286B3C3B0025418B /* AnimalImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A6831286B3C3B0025418B /* AnimalImagesCollectionViewCell.swift */; };
+		7F3A6837286B3C750025418B /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A6835286B3C750025418B /* BannerCollectionViewCell.swift */; };
+		7F3A6838286B3C750025418B /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A6836286B3C750025418B /* BannerCollectionViewCell.xib */; };
 		7F4F2DC528671F1C00783ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F2DC428671F1C00783ABC /* AppDelegate.swift */; };
 		7F4F2DC728671F1C00783ABC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F2DC628671F1C00783ABC /* SceneDelegate.swift */; };
 		7F4F2DC928671F1C00783ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F2DC828671F1C00783ABC /* ViewController.swift */; };
@@ -41,11 +49,17 @@
 		FC465E87286AD88F000F304B /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC465E85286AD88F000F304B /* VideoCollectionViewCell.xib */; };
 		FC465E89286ADBD9000F304B /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E88286ADBD9000F304B /* WatchModel.swift */; };
 		FC465E8B286ADD1B000F304B /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E8A286ADD1B000F304B /* Watch.swift */; };
-		FC465E9E286B0CA4000F304B /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E9C286B0CA4000F304B /* GalleryViewController.swift */; };
-		FC465E9F286B0CA4000F304B /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC465E9D286B0CA4000F304B /* GalleryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F3A6827286B3C1A0025418B /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		7F3A6828286B3C1A0025418B /* GalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		7F3A682B286B3C240025418B /* GalleryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		7F3A682C286B3C240025418B /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		7F3A6830286B3C3B0025418B /* AnimalImagesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalImagesCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F3A6831286B3C3B0025418B /* AnimalImagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F3A6835286B3C750025418B /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F3A6836286B3C750025418B /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		7F4F2DC128671F1C00783ABC /* Animals-B3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animals-B3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4F2DC428671F1C00783ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F4F2DC628671F1C00783ABC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +96,6 @@
 		FC465E85286AD88F000F304B /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		FC465E88286ADBD9000F304B /* WatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
 		FC465E8A286ADD1B000F304B /* Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
-		FC465E9C286B0CA4000F304B /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
-		FC465E9D286B0CA4000F304B /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F3A682F286B3C2F0025418B /* AnimalImagesCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A6831286B3C3B0025418B /* AnimalImagesCollectionViewCell.swift */,
+				7F3A6830286B3C3B0025418B /* AnimalImagesCollectionViewCell.xib */,
+			);
+			path = AnimalImagesCell;
+			sourceTree = "<group>";
+		};
+		7F3A6834286B3C660025418B /* BannerCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A6835286B3C750025418B /* BannerCollectionViewCell.swift */,
+				7F3A6836286B3C750025418B /* BannerCollectionViewCell.xib */,
+			);
+			path = BannerCell;
+			sourceTree = "<group>";
+		};
 		7F4F2DB828671F1C00783ABC = {
 			isa = PBXGroup;
 			children = (
@@ -223,8 +253,12 @@
 		FC465E9B286B0C80000F304B /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				FC465E9C286B0CA4000F304B /* GalleryViewController.swift */,
-				FC465E9D286B0CA4000F304B /* GalleryViewController.xib */,
+				7F3A6827286B3C1A0025418B /* GalleryViewController.swift */,
+				7F3A6828286B3C1A0025418B /* GalleryViewController.xib */,
+				7F3A682B286B3C240025418B /* GalleryModel.swift */,
+				7F3A682C286B3C240025418B /* GalleryView.swift */,
+				7F3A6834286B3C660025418B /* BannerCell */,
+				7F3A682F286B3C2F0025418B /* AnimalImagesCell */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -297,10 +331,12 @@
 				7F5850882869E67800AD0EEC /* LocationsViewController.xib in Resources */,
 				7F4F2DCC28671F1C00783ABC /* Main.storyboard in Resources */,
 				7F5850942869EA5100AD0EEC /* animals.json in Resources */,
-				FC465E9F286B0CA4000F304B /* GalleryViewController.xib in Resources */,
+				7F3A6832286B3C3B0025418B /* AnimalImagesCollectionViewCell.xib in Resources */,
+				7F3A682A286B3C1A0025418B /* GalleryViewController.xib in Resources */,
 				7FF0DFAF2869F6ED00C94F5B /* ImageCollectionViewCell.xib in Resources */,
 				7F5850952869EA5100AD0EEC /* videos.json in Resources */,
 				FC465E87286AD88F000F304B /* VideoCollectionViewCell.xib in Resources */,
+				7F3A6838286B3C750025418B /* BannerCollectionViewCell.xib in Resources */,
 				7F5850832869E66500AD0EEC /* WatchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,8 +354,10 @@
 				FC465E82286AD5EB000F304B /* WatchView.swift in Sources */,
 				7F4F2DD9286721BC00783ABC /* TabBarViewController.swift in Sources */,
 				7FF0DFAE2869F6ED00C94F5B /* ImageCollectionViewCell.swift in Sources */,
+				7F3A6833286B3C3B0025418B /* AnimalImagesCollectionViewCell.swift in Sources */,
 				7F4F2DC928671F1C00783ABC /* ViewController.swift in Sources */,
 				7F5850A12869F02900AD0EEC /* Animal.swift in Sources */,
+				7F3A682D286B3C240025418B /* GalleryModel.swift in Sources */,
 				FC465E89286ADBD9000F304B /* WatchModel.swift in Sources */,
 				FC465E86286AD88F000F304B /* VideoCollectionViewCell.swift in Sources */,
 				7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */,
@@ -327,7 +365,9 @@
 				7F4F2DC528671F1C00783ABC /* AppDelegate.swift in Sources */,
 				7F5850A32869F0F000AD0EEC /* BrowseModel.swift in Sources */,
 				7F4F2DC728671F1C00783ABC /* SceneDelegate.swift in Sources */,
-				FC465E9E286B0CA4000F304B /* GalleryViewController.swift in Sources */,
+				7F3A682E286B3C240025418B /* GalleryView.swift in Sources */,
+				7F3A6837286B3C750025418B /* BannerCollectionViewCell.swift in Sources */,
+				7F3A6829286B3C1A0025418B /* GalleryViewController.swift in Sources */,
 				7F58509F2869EFDC00AD0EEC /* Bundle+Extension.swift in Sources */,
 				7FF0DFA92869F59400C94F5B /* HeroCollectionViewCell.swift in Sources */,
 				7F58509D2869EEAA00AD0EEC /* BrowseView.swift in Sources */,

@@ -8,22 +8,18 @@
 import UIKit
 
 class GalleryViewController: UIViewController {
-
+    @IBOutlet weak var galleryView: GalleryView!
+    var galleryModel: GalleryModel = GalleryModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        galleryView.setUpUI()
+        galleryModel.getData()
+        
+        let animalsData = galleryModel.animals
+        galleryView.animals = animalsData
+        
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
