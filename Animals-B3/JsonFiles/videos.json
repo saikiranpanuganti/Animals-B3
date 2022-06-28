@@ -1,51 +1,51 @@
 [
   {
-    "id" : "cheetah",
+    "id" : "video-cheetah",
     "name" : "Cheetah",
     "headline" : "Cheetah walking in the savannah"
   },
   {
-    "id" : "elephant",
+    "id" : "video-elephant",
     "name" : "Elephant",
     "headline" : "African elephant with calf walking"
   },
   {
-    "id" : "giraffe",
+    "id" : "video-giraffe",
     "name" : "Giraffe",
     "headline" : "Lonely giraffe walking in the savannah"
   },
   {
-    "id" : "gorilla",
+    "id" : "video-gorilla",
     "name" : "Gorilla",
     "headline" : "Western lowland adult gorilla walking"
   },
   {
-    "id" : "hippo",
+    "id" : "video-hippo",
     "name" : "Hippo",
     "headline" : "A cow hippo and her calf together in the water"
   },
   {
-    "id" : "lioness",
+    "id" : "video-lioness",
     "name" : "Lioness",
     "headline" : "African lioness slowly walking on the African savannah"
   },
   {
-    "id" : "lion",
+    "id" : "video-lion",
     "name" : "Lion",
     "headline" : "Close-up of a growling African lion"
   },
   {
-    "id" : "ostrich",
+    "id" : "video-ostrich",
     "name" : "Ostrich",
     "headline" : "Cock ostrich grazing on the savannah"
   },
   {
-    "id" : "rhino",
+    "id" : "video-rhino",
     "name" : "Rhino",
     "headline" : "Southern White Rhino walking in the grass"
   },
   {
-    "id" : "zebra",
+    "id" : "video-zebra",
     "name" : "Zebra",
     "headline" : "Adult striped zebra grazing rusty grass in summer"
   }

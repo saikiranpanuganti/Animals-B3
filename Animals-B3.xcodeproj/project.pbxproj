@@ -21,8 +21,6 @@
 		7F5850832869E66500AD0EEC /* WatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850812869E66500AD0EEC /* WatchViewController.xib */; };
 		7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850852869E67800AD0EEC /* LocationsViewController.swift */; };
 		7F5850882869E67800AD0EEC /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850862869E67800AD0EEC /* LocationsViewController.xib */; };
-		7F58508C2869E68D00AD0EEC /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58508A2869E68D00AD0EEC /* GalleryViewController.swift */; };
-		7F58508D2869E68D00AD0EEC /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F58508B2869E68D00AD0EEC /* GalleryViewController.xib */; };
 		7F5850932869EA5100AD0EEC /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F58508F2869EA5100AD0EEC /* locations.json */; };
 		7F5850942869EA5100AD0EEC /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850902869EA5100AD0EEC /* animals.json */; };
 		7F5850952869EA5100AD0EEC /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5850912869EA5100AD0EEC /* videos.json */; };
@@ -38,6 +36,13 @@
 		7FF0DFAE2869F6ED00C94F5B /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0DFAC2869F6ED00C94F5B /* ImageCollectionViewCell.swift */; };
 		7FF0DFAF2869F6ED00C94F5B /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF0DFAD2869F6ED00C94F5B /* ImageCollectionViewCell.xib */; };
 		7FF0DFB12869FA7D00C94F5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0DFB02869FA7D00C94F5B /* Constants.swift */; };
+		FC465E82286AD5EB000F304B /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E81286AD5EB000F304B /* WatchView.swift */; };
+		FC465E86286AD88F000F304B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E84286AD88F000F304B /* VideoCollectionViewCell.swift */; };
+		FC465E87286AD88F000F304B /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC465E85286AD88F000F304B /* VideoCollectionViewCell.xib */; };
+		FC465E89286ADBD9000F304B /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E88286ADBD9000F304B /* WatchModel.swift */; };
+		FC465E8B286ADD1B000F304B /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E8A286ADD1B000F304B /* Watch.swift */; };
+		FC465E9E286B0CA4000F304B /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E9C286B0CA4000F304B /* GalleryViewController.swift */; };
+		FC465E9F286B0CA4000F304B /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC465E9D286B0CA4000F304B /* GalleryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +62,6 @@
 		7F5850812869E66500AD0EEC /* WatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchViewController.xib; sourceTree = "<group>"; };
 		7F5850852869E67800AD0EEC /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		7F5850862869E67800AD0EEC /* LocationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
-		7F58508A2869E68D00AD0EEC /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
-		7F58508B2869E68D00AD0EEC /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
 		7F58508F2869EA5100AD0EEC /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		7F5850902869EA5100AD0EEC /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		7F5850912869EA5100AD0EEC /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
@@ -74,6 +77,13 @@
 		7FF0DFAC2869F6ED00C94F5B /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FF0DFAD2869F6ED00C94F5B /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		7FF0DFB02869FA7D00C94F5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC465E81286AD5EB000F304B /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		FC465E84286AD88F000F304B /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC465E85286AD88F000F304B /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC465E88286ADBD9000F304B /* WatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
+		FC465E8A286ADD1B000F304B /* Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
+		FC465E9C286B0CA4000F304B /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		FC465E9D286B0CA4000F304B /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +124,7 @@
 				7F58509E2869EFDC00AD0EEC /* Bundle+Extension.swift */,
 				7FF0DFB02869FA7D00C94F5B /* Constants.swift */,
 				7F58508E2869EA4600AD0EEC /* JsonFiles */,
-				7F5850892869E67F00AD0EEC /* Gallery */,
+				FC465E9B286B0C80000F304B /* Gallery */,
 				7F5850842869E66C00AD0EEC /* Locations */,
 				7F58507D2869E64100AD0EEC /* Watch */,
 				7F4F2DE12869E5FC00783ABC /* Browse */,
@@ -146,6 +156,10 @@
 			children = (
 				7F5850802869E66500AD0EEC /* WatchViewController.swift */,
 				7F5850812869E66500AD0EEC /* WatchViewController.xib */,
+				FC465E81286AD5EB000F304B /* WatchView.swift */,
+				FC465E88286ADBD9000F304B /* WatchModel.swift */,
+				FC465E8A286ADD1B000F304B /* Watch.swift */,
+				FC465E83286AD859000F304B /* VideoCell */,
 			);
 			path = Watch;
 			sourceTree = "<group>";
@@ -157,15 +171,6 @@
 				7F5850862869E67800AD0EEC /* LocationsViewController.xib */,
 			);
 			path = Locations;
-			sourceTree = "<group>";
-		};
-		7F5850892869E67F00AD0EEC /* Gallery */ = {
-			isa = PBXGroup;
-			children = (
-				7F58508A2869E68D00AD0EEC /* GalleryViewController.swift */,
-				7F58508B2869E68D00AD0EEC /* GalleryViewController.xib */,
-			);
-			path = Gallery;
 			sourceTree = "<group>";
 		};
 		7F58508E2869EA4600AD0EEC /* JsonFiles */ = {
@@ -204,6 +209,24 @@
 				7FF0DFAD2869F6ED00C94F5B /* ImageCollectionViewCell.xib */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		FC465E83286AD859000F304B /* VideoCell */ = {
+			isa = PBXGroup;
+			children = (
+				FC465E84286AD88F000F304B /* VideoCollectionViewCell.swift */,
+				FC465E85286AD88F000F304B /* VideoCollectionViewCell.xib */,
+			);
+			path = VideoCell;
+			sourceTree = "<group>";
+		};
+		FC465E9B286B0C80000F304B /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				FC465E9C286B0CA4000F304B /* GalleryViewController.swift */,
+				FC465E9D286B0CA4000F304B /* GalleryViewController.xib */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +297,11 @@
 				7F5850882869E67800AD0EEC /* LocationsViewController.xib in Resources */,
 				7F4F2DCC28671F1C00783ABC /* Main.storyboard in Resources */,
 				7F5850942869EA5100AD0EEC /* animals.json in Resources */,
+				FC465E9F286B0CA4000F304B /* GalleryViewController.xib in Resources */,
 				7FF0DFAF2869F6ED00C94F5B /* ImageCollectionViewCell.xib in Resources */,
 				7F5850952869EA5100AD0EEC /* videos.json in Resources */,
+				FC465E87286AD88F000F304B /* VideoCollectionViewCell.xib in Resources */,
 				7F5850832869E66500AD0EEC /* WatchViewController.xib in Resources */,
-				7F58508D2869E68D00AD0EEC /* GalleryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,20 +313,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F58507B2869E63E00AD0EEC /* BrowseViewController.swift in Sources */,
+				FC465E8B286ADD1B000F304B /* Watch.swift in Sources */,
 				7FF0DFB12869FA7D00C94F5B /* Constants.swift in Sources */,
+				FC465E82286AD5EB000F304B /* WatchView.swift in Sources */,
 				7F4F2DD9286721BC00783ABC /* TabBarViewController.swift in Sources */,
 				7FF0DFAE2869F6ED00C94F5B /* ImageCollectionViewCell.swift in Sources */,
 				7F4F2DC928671F1C00783ABC /* ViewController.swift in Sources */,
 				7F5850A12869F02900AD0EEC /* Animal.swift in Sources */,
+				FC465E89286ADBD9000F304B /* WatchModel.swift in Sources */,
+				FC465E86286AD88F000F304B /* VideoCollectionViewCell.swift in Sources */,
 				7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */,
 				7F58509A2869ED1B00AD0EEC /* AnimalCollectionViewCell.swift in Sources */,
 				7F4F2DC528671F1C00783ABC /* AppDelegate.swift in Sources */,
 				7F5850A32869F0F000AD0EEC /* BrowseModel.swift in Sources */,
 				7F4F2DC728671F1C00783ABC /* SceneDelegate.swift in Sources */,
+				FC465E9E286B0CA4000F304B /* GalleryViewController.swift in Sources */,
 				7F58509F2869EFDC00AD0EEC /* Bundle+Extension.swift in Sources */,
 				7FF0DFA92869F59400C94F5B /* HeroCollectionViewCell.swift in Sources */,
 				7F58509D2869EEAA00AD0EEC /* BrowseView.swift in Sources */,
-				7F58508C2869E68D00AD0EEC /* GalleryViewController.swift in Sources */,
 				7F4F2DDB286721DE00783ABC /* SplashViewController.swift in Sources */,
 				7F5850822869E66500AD0EEC /* WatchViewController.swift in Sources */,
 			);
