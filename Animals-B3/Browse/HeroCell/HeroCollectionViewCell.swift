@@ -9,8 +9,10 @@ import UIKit
 
 class HeroCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     var coverAnimals: Animals = []
+    var currentPage: Int = 0
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,7 @@ class HeroCollectionViewCell: UICollectionViewCell {
         self.coverAnimals = coverAnimals
         
         DispatchQueue.main.async {
+            self.pageControl.numberOfPages = coverAnimals.count
             self.collectionView.reloadData()
         }
     }
@@ -58,3 +61,21 @@ extension HeroCollectionViewCell: UICollectionViewDelegateFlowLayout {
         return 0
     }
 }
+
+extension HeroCollectionViewCell: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(scrollView.contentOffset.x)
+        let currentPage = Int(scrollView.contentOffset.x)/394
+        if self.currentPage != currentPage {
+            self.currentPage = currentPage
+            pageControl.currentPage = currentPage
+        }
+    }
+}
+
+
+//394/394 = 1
+//
+//393/394 Q = 0 , R = 393
+//
+//395/394 = Q = 1, R = 1

@@ -22,13 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="423" height="145"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xyu-I5-ekV">
-                                <rect key="frame" x="15" y="8" width="129" height="129"/>
+                                <rect key="frame" x="5" y="8" width="129" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xyu-I5-ekV" secondAttribute="height" multiplier="1:1" id="hoI-i7-taI"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pmX-Dh-RAy">
-                                <rect key="frame" x="393" y="66" width="15" height="13"/>
+                                <rect key="frame" x="403" y="66" width="15" height="13"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="Ie8-t9-dtk"/>
@@ -37,16 +37,16 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="medium"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iyw-rx-upN">
-                                <rect key="frame" x="154" y="53" width="229" height="39.5"/>
+                                <rect key="frame" x="144" y="53" width="249" height="39.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7R7-Kw-VkT">
-                                        <rect key="frame" x="0.0" y="0.0" width="229" height="21.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="249" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <color key="textColor" name="AppColor_Orange"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XK-2C-1Cj">
-                                        <rect key="frame" x="0.0" y="21.5" width="229" height="18"/>
+                                        <rect key="frame" x="0.0" y="21.5" width="249" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -67,13 +67,13 @@
                             <constraint firstAttribute="bottom" secondItem="Xyu-I5-ekV" secondAttribute="bottom" constant="8" id="KvY-mJ-cjx"/>
                             <constraint firstItem="Xyu-I5-ekV" firstAttribute="top" secondItem="x6K-lt-Bh5" secondAttribute="top" constant="8" id="MSd-q3-jdn"/>
                             <constraint firstAttribute="bottom" secondItem="8KQ-lE-Ue2" secondAttribute="bottom" id="QcI-25-8kY"/>
-                            <constraint firstAttribute="trailing" secondItem="pmX-Dh-RAy" secondAttribute="trailing" constant="15" id="TCB-IO-k2n"/>
+                            <constraint firstAttribute="trailing" secondItem="pmX-Dh-RAy" secondAttribute="trailing" constant="5" id="TCB-IO-k2n"/>
                             <constraint firstItem="8KQ-lE-Ue2" firstAttribute="leading" secondItem="x6K-lt-Bh5" secondAttribute="leading" constant="25" id="TWY-L7-DHy"/>
                             <constraint firstAttribute="trailing" secondItem="8KQ-lE-Ue2" secondAttribute="trailing" constant="25" id="hUe-fd-Kyu"/>
                             <constraint firstItem="iyw-rx-upN" firstAttribute="centerY" secondItem="x6K-lt-Bh5" secondAttribute="centerY" id="iOB-NH-Ozm"/>
                             <constraint firstItem="pmX-Dh-RAy" firstAttribute="leading" secondItem="iyw-rx-upN" secondAttribute="trailing" constant="10" id="lOq-ls-Ar4"/>
                             <constraint firstItem="iyw-rx-upN" firstAttribute="leading" secondItem="Xyu-I5-ekV" secondAttribute="trailing" constant="10" id="szY-k4-iUq"/>
-                            <constraint firstItem="Xyu-I5-ekV" firstAttribute="leading" secondItem="x6K-lt-Bh5" secondAttribute="leading" constant="15" id="xx9-NI-ds5"/>
+                            <constraint firstItem="Xyu-I5-ekV" firstAttribute="leading" secondItem="x6K-lt-Bh5" secondAttribute="leading" constant="5" id="xx9-NI-ds5"/>
                         </constraints>
                     </view>
                 </subviews>

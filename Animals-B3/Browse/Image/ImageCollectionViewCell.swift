@@ -18,4 +18,9 @@ class ImageCollectionViewCell: UICollectionViewCell {
     func configureUI(animal: Animal) {
         animalImage.image = UIImage(named: animal.coverImage ?? "")
     }
+    
+    func configureUI_img(animal: Animal) {
+        animalImage.layer.cornerRadius = 10.0
+        animalImage.image = UIImage(named: animal.image ?? "")
+    }
 }

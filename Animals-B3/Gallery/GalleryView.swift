@@ -17,6 +17,8 @@ class GalleryView: UIView {
         collectionView.register(UINib(nibName: "BannerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BannerCollectionViewCell")
         collectionView.register(UINib(nibName: "AnimalImagesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AnimalImagesCollectionViewCell")
         
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -56,23 +58,15 @@ extension GalleryView: UICollectionViewDelegate {
 extension GalleryView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
-            return CGSize(width: collectionView.frame.width, height: 370)
+            return CGSize(width: collectionView.frame.width-40, height: 370)
         }else{
-            collectionView.contentInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
-            return CGSize(width: collectionView.frame.width/3-30, height: 110)
+            return CGSize(width: (collectionView.frame.width-40)/3, height: 110)
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        if section == 1{
-            
-            return 10
-        }
         return 0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        if section == 1{
-            return 5
-        }
         return 0
     }
     
