@@ -16,8 +16,8 @@ class QuotesCollectionViewCell: UICollectionViewCell {
 
     }
     
-    func configureUI(animal:Animal){
-        quoteLabel.text = animal.animalDescription
+    func configureUI(animalFact: String?){
+        quoteLabel.text = animalFact
     }
 
 }

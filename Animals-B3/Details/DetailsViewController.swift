@@ -14,11 +14,17 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        detailsView.delegate = self
+        
+        let data = detailsModel.animal
+        detailsView.animal = data
+        
         detailsView.setUpUI()
-        detailsModel.getData()
-        
-        let data = detailsModel.animals
-        detailsView.animals = data
-        
+    }
+}
+
+extension DetailsViewController: DetailsViewDelegate {
+    func backTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }

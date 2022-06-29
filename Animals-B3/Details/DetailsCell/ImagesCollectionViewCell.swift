@@ -13,9 +13,10 @@ class ImagesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     
+        animalImages.layer.cornerRadius = 10.0
     }
-    func configureUI(animal:Animal){
-        animalImages.image = UIImage(named: animal.image ?? "")
+    
+    func configureUI(animalImage: String?){
+        animalImages.image = UIImage(named: animalImage ?? "")
     }
-
 }

@@ -15,11 +15,16 @@ enum HomeType {
     case squarexHero
 }
 
+protocol BrowseViewDelegate {
+    func animalSelected(animal: Animal?)
+}
+
 class BrowseView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var leftButtonImage: UIImageView!
     @IBOutlet weak var rightButtonImage: UIImageView!
     
+    var delegate: BrowseViewDelegate?
     
     var animals: Animals = []
     var coverAnimals: Animals = []
@@ -103,6 +108,7 @@ extension BrowseView: UICollectionViewDataSource {
         if homeType == .squarexHero {
             if indexPath.section == 0 {
                 if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeroCollectionViewCell", for: indexPath) as? HeroCollectionViewCell {
+                    cell.delegate = self
                     cell.configureUI(coverAnimals: coverAnimals)
                     return cell
                 }
@@ -136,6 +142,9 @@ extension BrowseView: UICollectionViewDataSource {
     
 }
 extension BrowseView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.animalSelected(animal: animals[indexPath.row])
+    }
 }
 extension BrowseView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -174,5 +183,11 @@ extension BrowseView: UICollectionViewDelegateFlowLayout {
             return 10
         }
         return 0
+    }
+}
+
+extension BrowseView: HeroCollectionViewCellDelegate {
+    func animalTapped(animal: Animal?) {
+        delegate?.animalSelected(animal: animal)
     }
 }

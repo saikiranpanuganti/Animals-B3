@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol HeroCollectionViewCellDelegate {
+    func animalTapped(animal: Animal?)
+}
+
 class HeroCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
+    
+    var delegate: HeroCollectionViewCellDelegate?
     
     var coverAnimals: Animals = []
     var currentPage: Int = 0
@@ -47,7 +53,9 @@ extension HeroCollectionViewCell: UICollectionViewDataSource {
 }
 
 extension HeroCollectionViewCell: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.animalTapped(animal: coverAnimals[indexPath.row])
+    }
 }
 
 extension HeroCollectionViewCell: UICollectionViewDelegateFlowLayout {

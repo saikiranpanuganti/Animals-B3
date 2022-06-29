@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,24 +19,26 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2x-bt-TOT">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="123"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USS-S7-4xe">
-                                <rect key="frame" x="0.0" y="0.0" width="190" height="123"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USS-S7-4xe">
+                                <rect key="frame" x="10" y="0.0" width="170" height="123"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="USS-S7-4xe" secondAttribute="bottom" id="Nfw-78-6Mt"/>
-                            <constraint firstItem="USS-S7-4xe" firstAttribute="leading" secondItem="v2x-bt-TOT" secondAttribute="leading" id="Nm0-f0-IMi"/>
-                            <constraint firstAttribute="trailing" secondItem="USS-S7-4xe" secondAttribute="trailing" id="dKD-Yo-ijb"/>
+                            <constraint firstItem="USS-S7-4xe" firstAttribute="leading" secondItem="v2x-bt-TOT" secondAttribute="leading" constant="10" id="Nm0-f0-IMi"/>
+                            <constraint firstAttribute="trailing" secondItem="USS-S7-4xe" secondAttribute="trailing" constant="10" id="dKD-Yo-ijb"/>
                             <constraint firstItem="USS-S7-4xe" firstAttribute="top" secondItem="v2x-bt-TOT" secondAttribute="top" id="p5S-77-NMH"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="v2x-bt-TOT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KzL-Z3-tPY"/>
                 <constraint firstItem="v2x-bt-TOT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QRN-aM-BQR"/>
@@ -51,9 +52,4 @@
             <point key="canvasLocation" x="239.13043478260872" y="118.19196428571428"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

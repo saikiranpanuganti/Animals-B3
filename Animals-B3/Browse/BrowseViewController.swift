@@ -14,6 +14,8 @@ class BrowseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        browseView.delegate = self
+        
         browseView.setUpUI()
         browseModel.getData()
         
@@ -24,4 +26,12 @@ class BrowseViewController: UIViewController {
         browseView.coverAnimals = coverAnimalsData
     }
 
+}
+
+extension BrowseViewController: BrowseViewDelegate {
+    func animalSelected(animal: Animal?) {
+        let detailsVc = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+        detailsVc.detailsModel.animal = animal
+        navigationController?.pushViewController(detailsVc, animated: true)
+    }
 }
