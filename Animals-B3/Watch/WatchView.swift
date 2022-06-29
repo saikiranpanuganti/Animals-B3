@@ -8,8 +8,14 @@
 import Foundation
 import UIKit
 
+protocol WatchViewDelegate {
+    func playVideo(path: String)
+}
+
 class WatchView : UIView {
     @IBOutlet weak var watchCollectionView : UICollectionView!
+    
+    var delegate: WatchViewDelegate?
     
     var animalData:[Watch] = []
 
@@ -36,7 +42,13 @@ extension WatchView : UICollectionViewDataSource {
     }
 }
 extension WatchView : UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if var animalId = animalData[indexPath.row].id {
+            animalId.removeFirst(6)
+            guard let path = Bundle.main.path(forResource: animalId, ofType:"mp4") else { return }
+            delegate?.playVideo(path: path)
+        }
+    }
 }
 extension WatchView : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

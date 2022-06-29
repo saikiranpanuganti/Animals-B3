@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class WatchViewController: UIViewController {
     @IBOutlet weak var watchView : WatchView!
@@ -14,11 +15,25 @@ class WatchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        watchView.delegate = self
+        
         watchView.setUpUI()
         watchModel.getData()
         
         let data = watchModel.animalData
         watchView.animalData = data
     }
+    
+    func playVideo(path: String) {
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+        }
+    }
+}
+
+extension WatchViewController: WatchViewDelegate {
     
 }
