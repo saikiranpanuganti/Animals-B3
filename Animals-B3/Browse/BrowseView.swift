@@ -23,9 +23,9 @@ class BrowseView: UIView {
     
     var animals: Animals = []
     var coverAnimals: Animals = []
-    var square2x2 = ""
+    var square2x2 = "square.grid.2x2"
     var square2x3 = "square.grid.3x2"
-    var square2x1 = ""
+    var square1x1 = "rectangle.grid.1x2"
     var homeType: HomeType = .squarexHero
     
     func setUpUI() {
@@ -76,9 +76,12 @@ extension BrowseView: UICollectionViewDataSource {
             return 2
         }else if homeType == .square2x3 {
             return 1
-        }else {
-            return 0
+        }else if homeType == .square1x1 {
+            return 1
+        }else  if homeType == .square2x2{
+            return 1
         }
+        return 0
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if homeType == .squarexHero {
@@ -89,9 +92,12 @@ extension BrowseView: UICollectionViewDataSource {
             }
         }else if homeType == .square2x3 {
             return animals.count
-        }else {
-            return 0
+        }else if homeType == .square1x1{
+            return animals.count
+        }else if homeType == .square2x2{
+            return animals.count
         }
+        return 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if homeType == .squarexHero {
@@ -109,19 +115,28 @@ extension BrowseView: UICollectionViewDataSource {
         }else if homeType == .square2x3 {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as? ImageCollectionViewCell {
                 cell.configureUI_img(animal: animals[indexPath.row])
+                rightButtonImage.image = UIImage(systemName: "square.grid.3x2")
                 return cell
             }
-        }else {
-            return UICollectionViewCell()
+        }else if homeType == .square1x1 {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as? ImageCollectionViewCell {
+                cell.configureUI_img(animal: animals[indexPath.row])
+                rightButtonImage.image = UIImage(systemName: "rectangle.grid.1x2")
+                return cell
+            }
+        } else if homeType == .square2x2 {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as? ImageCollectionViewCell {
+                cell.configureUI_img(animal: animals[indexPath.row])
+                rightButtonImage.image = UIImage(systemName: "square.grid.2x2")
+                return cell
+            }
         }
         return UICollectionViewCell()
     }
-}
-
-extension BrowseView: UICollectionViewDelegate {
     
 }
-
+extension BrowseView: UICollectionViewDelegate {
+}
 extension BrowseView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if homeType == .squarexHero {
@@ -132,18 +147,30 @@ extension BrowseView: UICollectionViewDelegateFlowLayout {
             }
         }else if homeType == .square2x3 {
             return CGSize(width: (collectionView.frame.width-21)/3, height: ((collectionView.frame.width-21)/3)*0.6)
-        }else {
-            return CGSize.zero
+        }else if homeType == .square1x1 {
+            return CGSize(width: (collectionView.frame.width), height:220)
+        }else if homeType == .square2x2 {
+            return CGSize(width: (collectionView.frame.width-10)/2, height: 100)
         }
+        return CGSize.zero
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if homeType == .square2x3 {
+            return 10
+        }else if homeType == .square1x1 {
+            return 10
+        }else if homeType == .square2x2 {
             return 10
         }
         return 0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         if homeType == .square2x3 {
+            return 10
+        }else if homeType == .square1x1{
+            return 10
+        }else if homeType == .square2x2{
             return 10
         }
         return 0

@@ -49,6 +49,14 @@
 		FC465E87286AD88F000F304B /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC465E85286AD88F000F304B /* VideoCollectionViewCell.xib */; };
 		FC465E89286ADBD9000F304B /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E88286ADBD9000F304B /* WatchModel.swift */; };
 		FC465E8B286ADD1B000F304B /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E8A286ADD1B000F304B /* Watch.swift */; };
+		FC5BA002286C2080002BCFFD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA000286C2080002BCFFD /* DetailsViewController.swift */; };
+		FC5BA003286C2080002BCFFD /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5BA001286C2080002BCFFD /* DetailsViewController.xib */; };
+		FC5BA008286C3C9B002BCFFD /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA006286C3C9B002BCFFD /* ImagesCollectionViewCell.swift */; };
+		FC5BA009286C3C9B002BCFFD /* ImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5BA007286C3C9B002BCFFD /* ImagesCollectionViewCell.xib */; };
+		FC5BA00C286C3CDD002BCFFD /* QuotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA00A286C3CDD002BCFFD /* QuotesCollectionViewCell.swift */; };
+		FC5BA00D286C3CDD002BCFFD /* QuotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5BA00B286C3CDD002BCFFD /* QuotesCollectionViewCell.xib */; };
+		FC5BA00F286C4824002BCFFD /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA00E286C4824002BCFFD /* DetailsView.swift */; };
+		FC5BA011286C4876002BCFFD /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA010286C4876002BCFFD /* DetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +104,14 @@
 		FC465E85286AD88F000F304B /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		FC465E88286ADBD9000F304B /* WatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
 		FC465E8A286ADD1B000F304B /* Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
+		FC5BA000286C2080002BCFFD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FC5BA001286C2080002BCFFD /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		FC5BA006286C3C9B002BCFFD /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC5BA007286C3C9B002BCFFD /* ImagesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC5BA00A286C3CDD002BCFFD /* QuotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC5BA00B286C3CDD002BCFFD /* QuotesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC5BA00E286C4824002BCFFD /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		FC5BA010286C4876002BCFFD /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +190,7 @@
 				7F58509C2869EEAA00AD0EEC /* BrowseView.swift */,
 				7F5850A22869F0F000AD0EEC /* BrowseModel.swift */,
 				7F5850A02869F02900AD0EEC /* Animal.swift */,
+				FC5BA004286C3C60002BCFFD /* Details */,
 				7FF0DFAB2869F6DC00C94F5B /* Image */,
 				7F5850A42869F54900AD0EEC /* HeroCell */,
 				7F5850972869ED0200AD0EEC /* AnimalCell */,
@@ -263,6 +280,29 @@
 			path = Gallery;
 			sourceTree = "<group>";
 		};
+		FC5BA004286C3C60002BCFFD /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA000286C2080002BCFFD /* DetailsViewController.swift */,
+				FC5BA001286C2080002BCFFD /* DetailsViewController.xib */,
+				FC5BA00E286C4824002BCFFD /* DetailsView.swift */,
+				FC5BA010286C4876002BCFFD /* DetailsModel.swift */,
+				FC5BA005286C3C74002BCFFD /* DetailsCell */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		FC5BA005286C3C74002BCFFD /* DetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA006286C3C9B002BCFFD /* ImagesCollectionViewCell.swift */,
+				FC5BA007286C3C9B002BCFFD /* ImagesCollectionViewCell.xib */,
+				FC5BA00A286C3CDD002BCFFD /* QuotesCollectionViewCell.swift */,
+				FC5BA00B286C3CDD002BCFFD /* QuotesCollectionViewCell.xib */,
+			);
+			path = DetailsCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4F2DD128671F1D00783ABC /* LaunchScreen.storyboard in Resources */,
+				FC5BA00D286C3CDD002BCFFD /* QuotesCollectionViewCell.xib in Resources */,
 				7F5850962869EA5100AD0EEC /* covers.json in Resources */,
 				7F58509B2869ED1B00AD0EEC /* AnimalCollectionViewCell.xib in Resources */,
 				7FF0DFAA2869F59400C94F5B /* HeroCollectionViewCell.xib in Resources */,
@@ -338,6 +379,8 @@
 				FC465E87286AD88F000F304B /* VideoCollectionViewCell.xib in Resources */,
 				7F3A6838286B3C750025418B /* BannerCollectionViewCell.xib in Resources */,
 				7F5850832869E66500AD0EEC /* WatchViewController.xib in Resources */,
+				FC5BA003286C2080002BCFFD /* DetailsViewController.xib in Resources */,
+				FC5BA009286C3C9B002BCFFD /* ImagesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +394,7 @@
 				7F58507B2869E63E00AD0EEC /* BrowseViewController.swift in Sources */,
 				FC465E8B286ADD1B000F304B /* Watch.swift in Sources */,
 				7FF0DFB12869FA7D00C94F5B /* Constants.swift in Sources */,
+				FC5BA00F286C4824002BCFFD /* DetailsView.swift in Sources */,
 				FC465E82286AD5EB000F304B /* WatchView.swift in Sources */,
 				7F4F2DD9286721BC00783ABC /* TabBarViewController.swift in Sources */,
 				7FF0DFAE2869F6ED00C94F5B /* ImageCollectionViewCell.swift in Sources */,
@@ -359,19 +403,23 @@
 				7F5850A12869F02900AD0EEC /* Animal.swift in Sources */,
 				7F3A682D286B3C240025418B /* GalleryModel.swift in Sources */,
 				FC465E89286ADBD9000F304B /* WatchModel.swift in Sources */,
+				FC5BA002286C2080002BCFFD /* DetailsViewController.swift in Sources */,
 				FC465E86286AD88F000F304B /* VideoCollectionViewCell.swift in Sources */,
 				7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */,
 				7F58509A2869ED1B00AD0EEC /* AnimalCollectionViewCell.swift in Sources */,
 				7F4F2DC528671F1C00783ABC /* AppDelegate.swift in Sources */,
+				FC5BA008286C3C9B002BCFFD /* ImagesCollectionViewCell.swift in Sources */,
 				7F5850A32869F0F000AD0EEC /* BrowseModel.swift in Sources */,
 				7F4F2DC728671F1C00783ABC /* SceneDelegate.swift in Sources */,
 				7F3A682E286B3C240025418B /* GalleryView.swift in Sources */,
 				7F3A6837286B3C750025418B /* BannerCollectionViewCell.swift in Sources */,
+				FC5BA00C286C3CDD002BCFFD /* QuotesCollectionViewCell.swift in Sources */,
 				7F3A6829286B3C1A0025418B /* GalleryViewController.swift in Sources */,
 				7F58509F2869EFDC00AD0EEC /* Bundle+Extension.swift in Sources */,
 				7FF0DFA92869F59400C94F5B /* HeroCollectionViewCell.swift in Sources */,
 				7F58509D2869EEAA00AD0EEC /* BrowseView.swift in Sources */,
 				7F4F2DDB286721DE00783ABC /* SplashViewController.swift in Sources */,
+				FC5BA011286C4876002BCFFD /* DetailsModel.swift in Sources */,
 				7F5850822869E66500AD0EEC /* WatchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

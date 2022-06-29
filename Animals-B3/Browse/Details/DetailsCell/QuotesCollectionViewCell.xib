@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QuotesCollectionViewCell" customModule="Animals_B3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2x-bt-TOT">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="123"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USS-S7-4xe">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="123"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="USS-S7-4xe" secondAttribute="bottom" id="Nfw-78-6Mt"/>
+                            <constraint firstItem="USS-S7-4xe" firstAttribute="leading" secondItem="v2x-bt-TOT" secondAttribute="leading" id="Nm0-f0-IMi"/>
+                            <constraint firstAttribute="trailing" secondItem="USS-S7-4xe" secondAttribute="trailing" id="dKD-Yo-ijb"/>
+                            <constraint firstItem="USS-S7-4xe" firstAttribute="top" secondItem="v2x-bt-TOT" secondAttribute="top" id="p5S-77-NMH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="v2x-bt-TOT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KzL-Z3-tPY"/>
+                <constraint firstItem="v2x-bt-TOT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QRN-aM-BQR"/>
+                <constraint firstAttribute="trailing" secondItem="v2x-bt-TOT" secondAttribute="trailing" id="dRo-NU-soc"/>
+                <constraint firstAttribute="bottom" secondItem="v2x-bt-TOT" secondAttribute="bottom" id="x1a-ft-2Jm"/>
+            </constraints>
+            <size key="customSize" width="190" height="123"/>
+            <connections>
+                <outlet property="quoteLabel" destination="USS-S7-4xe" id="Sch-H4-S72"/>
+            </connections>
+            <point key="canvasLocation" x="239.13043478260872" y="118.19196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
