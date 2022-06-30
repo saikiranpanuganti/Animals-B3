@@ -21,10 +21,14 @@ class DetailsView: UIView {
     @IBOutlet weak var animalDescription: UILabel!
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     @IBOutlet weak var quotesCollectionView: UICollectionView!
+    @IBOutlet weak var quotesPageController: UIPageControl!
     
     var delegate: DetailsViewDelegate?
     
     var animal: Animal?
+    
+    var currentPage: Int = 0
+    
 
     func setUpUI(){
         
@@ -114,4 +118,14 @@ extension DetailsView : UICollectionViewDelegateFlowLayout{
             return 0
         }
     }
+}
+extension DetailsView : UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print(scrollView.contentOffset.x)
+        let currentPage = Int(scrollView.contentOffset.x)/374
+        if self.currentPage != currentPage {
+            self.currentPage = currentPage
+            quotesPageController.currentPage = currentPage
+    }
+}
 }

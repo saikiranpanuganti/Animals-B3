@@ -25,6 +25,10 @@ class WatchView : UIView {
         watchCollectionView.dataSource = self
         watchCollectionView.delegate = self
     }
+    @IBAction func shuffleButtonTapped(){
+        animalData = animalData.shuffled()
+        watchCollectionView.reloadData()
+    }
 }
 extension WatchView : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {

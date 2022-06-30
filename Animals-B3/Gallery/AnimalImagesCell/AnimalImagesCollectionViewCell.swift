@@ -8,7 +8,6 @@
 import UIKit
 
 class AnimalImagesCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var animalImage: UIImageView!
 
     override func awakeFromNib() {

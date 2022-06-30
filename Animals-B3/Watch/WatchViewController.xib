@@ -44,6 +44,13 @@
                         <constraint firstAttribute="width" secondItem="MmM-N3-lJU" secondAttribute="height" id="QRM-uV-q7m"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kd-hp-Oi8">
+                    <rect key="frame" x="364" y="48.5" width="30" height="25"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="shuffleButtonTapped" destination="i5M-Pr-FkT" eventType="touchUpInside" id="oae-Fb-Cd7"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,10 +59,14 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hnj-Pa-igl" secondAttribute="trailing" id="7hz-fL-J4q"/>
                 <constraint firstItem="Hnj-Pa-igl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ACE-KZ-4eO"/>
                 <constraint firstAttribute="bottom" secondItem="Hnj-Pa-igl" secondAttribute="bottom" id="FE4-pM-wMm"/>
+                <constraint firstItem="1Kd-hp-Oi8" firstAttribute="centerY" secondItem="MmM-N3-lJU" secondAttribute="centerY" id="McA-Sz-yoO"/>
+                <constraint firstItem="1Kd-hp-Oi8" firstAttribute="height" secondItem="MmM-N3-lJU" secondAttribute="height" multiplier="0.833333" id="bd3-ct-1ft"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MmM-N3-lJU" secondAttribute="trailing" constant="20" id="l1f-49-HjP"/>
                 <constraint firstItem="Nef-0s-HJz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sap-Ho-qcH"/>
                 <constraint firstItem="Nef-0s-HJz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="sf7-SD-isw"/>
+                <constraint firstItem="1Kd-hp-Oi8" firstAttribute="centerX" secondItem="MmM-N3-lJU" secondAttribute="centerX" id="tbi-bd-fBd"/>
                 <constraint firstItem="Hnj-Pa-igl" firstAttribute="top" secondItem="Nef-0s-HJz" secondAttribute="bottom" constant="15" id="w6e-Lc-rdB"/>
+                <constraint firstItem="1Kd-hp-Oi8" firstAttribute="width" secondItem="MmM-N3-lJU" secondAttribute="width" id="xiZ-oh-d4t"/>
             </constraints>
             <connections>
                 <outlet property="watchCollectionView" destination="Hnj-Pa-igl" id="IEj-5n-D3A"/>

@@ -9,16 +9,19 @@ import UIKit
 
 class BannerCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var animalImage: UIImageView!
+    @IBOutlet weak var sliderOutlet: UISlider!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         animalImage.layer.cornerRadius = animalImage.frame.width/2
         animalImage.layer.borderWidth = 8
         animalImage.layer.borderColor = UIColor.black.cgColor
+    
     }
     
     func configUi(animal: Animal) {
         animalImage.image = UIImage(named: animal.image ?? "" )
     }
-
+    
+    
 }

@@ -12,6 +12,10 @@ class GalleryView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var animals: Animals = []
+    var imgIndex = 0
+    var selectedImage: String?
+    
+    var isselected : Bool = true
     
     func setUpUI() {
         collectionView.register(UINib(nibName: "BannerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BannerCollectionViewCell")
@@ -38,7 +42,7 @@ extension GalleryView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCollectionViewCell", for: indexPath) as? BannerCollectionViewCell {
-                cell.configUi(animal: animals[indexPath.row] )
+                cell.configUi(animal: animals[imgIndex] )
                 return cell
             }
         }else{
@@ -56,6 +60,14 @@ extension GalleryView: UICollectionViewDelegate {
 }
 
 extension GalleryView: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if indexPath.section == 1{
+            imgIndex = indexPath.row
+            collectionView.reloadData()
+        }
+      
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize(width: collectionView.frame.width-40, height: 370)

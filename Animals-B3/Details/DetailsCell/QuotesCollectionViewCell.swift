@@ -19,5 +19,4 @@ class QuotesCollectionViewCell: UICollectionViewCell {
     func configureUI(animalFact: String?){
         quoteLabel.text = animalFact
     }
-
 }

@@ -166,6 +166,10 @@
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                 </collectionView>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="wFK-4q-snk">
+                                    <rect key="frame" x="149" y="865" width="116" height="26"/>
+                                    <color key="pageIndicatorTintColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </pageControl>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zm-4R-Da8">
                                     <rect key="frame" x="70" y="941" width="274" height="50"/>
                                     <subviews>
@@ -316,6 +320,7 @@
                                 <constraint firstAttribute="trailing" secondItem="V5j-4p-FvX" secondAttribute="trailing" id="4ZV-Xt-9tC"/>
                                 <constraint firstItem="vBY-Ep-h6f" firstAttribute="leading" secondItem="jNa-c4-RJs" secondAttribute="leading" constant="70" id="6jl-0d-D2T"/>
                                 <constraint firstItem="4ak-wy-LcL" firstAttribute="top" secondItem="Oeb-Mm-P66" secondAttribute="bottom" constant="5" id="6ui-Po-cbJ"/>
+                                <constraint firstItem="2zm-4R-Da8" firstAttribute="top" secondItem="wFK-4q-snk" secondAttribute="bottom" constant="50" id="7nT-zI-KEh"/>
                                 <constraint firstItem="TPr-F2-iXp" firstAttribute="leading" secondItem="jNa-c4-RJs" secondAttribute="leading" id="Du1-kt-BRd"/>
                                 <constraint firstItem="mTl-GA-5ER" firstAttribute="leading" secondItem="jNa-c4-RJs" secondAttribute="leading" constant="5" id="IB4-Gf-ngd"/>
                                 <constraint firstItem="dqk-Fd-W9u" firstAttribute="top" secondItem="baT-v1-Ang" secondAttribute="bottom" constant="10" id="JiE-Pd-Nzh"/>
@@ -327,6 +332,7 @@
                                 <constraint firstAttribute="trailing" secondItem="2zm-4R-Da8" secondAttribute="trailing" constant="70" id="NnR-z7-Ppb"/>
                                 <constraint firstItem="haa-vi-Vr9" firstAttribute="top" secondItem="jNa-c4-RJs" secondAttribute="top" id="QzO-Bp-1Fa"/>
                                 <constraint firstAttribute="trailing" secondItem="TPr-F2-iXp" secondAttribute="trailing" id="WUu-Jd-mSa"/>
+                                <constraint firstItem="wFK-4q-snk" firstAttribute="centerX" secondItem="dqk-Fd-W9u" secondAttribute="centerX" id="Ylp-Hn-ClR"/>
                                 <constraint firstItem="37q-eL-HCg" firstAttribute="centerY" secondItem="TPr-F2-iXp" secondAttribute="centerY" id="arr-Wq-suT"/>
                                 <constraint firstItem="mTl-GA-5ER" firstAttribute="top" secondItem="4ak-wy-LcL" secondAttribute="bottom" constant="15" id="b8k-W9-BTa"/>
                                 <constraint firstAttribute="bottom" secondItem="TPr-F2-iXp" secondAttribute="bottom" constant="20" id="bMO-8m-HYc"/>
@@ -383,6 +389,7 @@
                 <outlet property="animalWiki" destination="PUW-Ko-fzm" id="W2u-BP-GVs"/>
                 <outlet property="imagesCollectionView" destination="V5j-4p-FvX" id="kJ4-uB-wMl"/>
                 <outlet property="quotesCollectionView" destination="dqk-Fd-W9u" id="w6d-b5-LS4"/>
+                <outlet property="quotesPageController" destination="wFK-4q-snk" id="Cuv-Q4-6ax"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
         </view>
