@@ -17,16 +17,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-pA-vsd">
-                        <rect key="frame" x="43.5" y="36.5" width="90" height="90"/>
+                        <rect key="frame" x="26.5" y="19.5" width="124" height="124"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="bbi-pA-vsd" secondAttribute="height" multiplier="1:1" id="a35-eD-9V1"/>
-                            <constraint firstAttribute="width" constant="90" id="xKq-f3-0o5"/>
                         </constraints>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstItem="bbi-pA-vsd" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.7" id="Eh6-2V-XWT"/>
                 <constraint firstItem="bbi-pA-vsd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bdl-sy-q8K"/>
                 <constraint firstItem="bbi-pA-vsd" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ntD-40-6UI"/>
             </constraints>

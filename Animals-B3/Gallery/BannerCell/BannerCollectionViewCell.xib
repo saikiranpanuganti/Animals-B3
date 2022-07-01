@@ -28,9 +28,12 @@
                                     <constraint firstAttribute="width" constant="250" id="Qag-0U-Oqv"/>
                                 </constraints>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nlM-si-FPL">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="nlM-si-FPL">
                                 <rect key="frame" x="23" y="330" width="301" height="31"/>
                                 <color key="tintColor" name="AppColor_Orange"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="gTV-IL-0wX" eventType="valueChanged" id="Yfl-aX-OtV"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

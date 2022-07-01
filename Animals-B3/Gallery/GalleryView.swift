@@ -7,9 +7,16 @@
 
 import UIKit
 
+enum CellsPerRow {
+    case two
+    case three
+    case four
+}
+
 class GalleryView: UIView {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var cellPerRow: CellsPerRow = .three
     
     var animals: Animals = []
     var imgIndex = 0
@@ -42,12 +49,19 @@ extension GalleryView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCollectionViewCell", for: indexPath) as? BannerCollectionViewCell {
+                cell.delegate = self
                 cell.configUi(animal: animals[imgIndex] )
                 return cell
             }
         }else{
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnimalImagesCollectionViewCell", for: indexPath) as? AnimalImagesCollectionViewCell {
-                cell.configUI(animal: animals[indexPath.row])
+                if cellPerRow == .two {
+                    cell.configUI(animal: animals[indexPath.row], width: (collectionView.frame.width-40)/2)
+                }else if cellPerRow == .three {
+                    cell.configUI(animal: animals[indexPath.row], width: (collectionView.frame.width-40)/3)
+                }else if cellPerRow == .four {
+                    cell.configUI(animal: animals[indexPath.row], width: (collectionView.frame.width-40)/4)
+                }
                 return cell
             }
         }
@@ -61,18 +75,22 @@ extension GalleryView: UICollectionViewDelegate {
 
 extension GalleryView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        if indexPath.section == 1{
+        if indexPath.section == 1 {
             imgIndex = indexPath.row
             collectionView.reloadData()
         }
-      
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize(width: collectionView.frame.width-40, height: 370)
         }else{
-            return CGSize(width: (collectionView.frame.width-40)/3, height: 110)
+            if cellPerRow == .two {
+                return CGSize(width: (collectionView.frame.width-40)/2, height: (collectionView.frame.width-40)/2)
+            }else if cellPerRow == .three {
+                return CGSize(width: (collectionView.frame.width-40)/3, height: (collectionView.frame.width-40)/3)
+            }else {
+                return CGSize(width: (collectionView.frame.width-40)/4, height: (collectionView.frame.width-40)/4)
+            }
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -84,3 +102,9 @@ extension GalleryView: UICollectionViewDelegateFlowLayout {
     
 }
 
+extension GalleryView: BannerCollectionViewCellDelegate {
+    func updateCellSize(cellsPerRow: CellsPerRow) {
+        self.cellPerRow = cellsPerRow
+        collectionView.reloadData()
+    }
+}

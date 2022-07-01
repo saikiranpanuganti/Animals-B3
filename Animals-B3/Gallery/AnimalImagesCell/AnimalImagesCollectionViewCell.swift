@@ -13,12 +13,12 @@ class AnimalImagesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        animalImage.layer.cornerRadius = animalImage.frame.width/2
         animalImage.layer.borderWidth = 3
         animalImage.layer.borderColor = UIColor.black.cgColor
     }
-    func configUI(animal: Animal) {
+    
+    func configUI(animal: Animal, width: CGFloat) {
+        animalImage.layer.cornerRadius = width*0.7/2
         animalImage.image = UIImage(named: animal.image ?? "")
     }
-
 }
