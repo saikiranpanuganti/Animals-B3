@@ -4,27 +4,35 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationsViewController" customModule="Animals_B3" customModuleProvider="target">
             <connections>
+                <outlet property="locationsView" destination="i5M-Pr-FkT" id="1y0-l4-xOm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="LocationsView" customModule="Animals_B3" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="we4-wt-lvF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </mapView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="we4-wt-lvF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5ov-jp-k3t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="we4-wt-lvF" secondAttribute="trailing" id="AVt-tp-gXh"/>
+                <constraint firstItem="we4-wt-lvF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FMJ-uj-4Xu"/>
+                <constraint firstAttribute="bottom" secondItem="we4-wt-lvF" secondAttribute="bottom" id="dar-9V-3ll"/>
+            </constraints>
+            <connections>
+                <outlet property="locationsMapView" destination="we4-wt-lvF" id="mdy-bT-U0v"/>
+            </connections>
             <point key="canvasLocation" x="139" y="100"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

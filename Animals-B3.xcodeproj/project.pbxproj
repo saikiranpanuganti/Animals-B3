@@ -49,6 +49,10 @@
 		7F5850A12869F02900AD0EEC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850A02869F02900AD0EEC /* Animal.swift */; };
 		7F5850A32869F0F000AD0EEC /* BrowseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5850A22869F0F000AD0EEC /* BrowseModel.swift */; };
 		7F7525FC286F2E69001A98AF /* cheetah.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F7525FB286F2E69001A98AF /* cheetah.mp4 */; };
+		7F7525FE286F35B0001A98AF /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7525FD286F35B0001A98AF /* LocationsView.swift */; };
+		7F752600286F35BB001A98AF /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7525FF286F35BB001A98AF /* LocationsModel.swift */; };
+		7F752602286F3710001A98AF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F752601286F3710001A98AF /* Location.swift */; };
+		7F752604286F3B18001A98AF /* AnimalAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F752603286F3B18001A98AF /* AnimalAnnotationView.swift */; };
 		7FF0DFA92869F59400C94F5B /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0DFA72869F59400C94F5B /* HeroCollectionViewCell.swift */; };
 		7FF0DFAA2869F59400C94F5B /* HeroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF0DFA82869F59400C94F5B /* HeroCollectionViewCell.xib */; };
 		7FF0DFAE2869F6ED00C94F5B /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0DFAC2869F6ED00C94F5B /* ImageCollectionViewCell.swift */; };
@@ -114,6 +118,10 @@
 		7F5850A02869F02900AD0EEC /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		7F5850A22869F0F000AD0EEC /* BrowseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseModel.swift; sourceTree = "<group>"; };
 		7F7525FB286F2E69001A98AF /* cheetah.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cheetah.mp4; sourceTree = "<group>"; };
+		7F7525FD286F35B0001A98AF /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		7F7525FF286F35BB001A98AF /* LocationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		7F752601286F3710001A98AF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		7F752603286F3B18001A98AF /* AnimalAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAnnotationView.swift; sourceTree = "<group>"; };
 		7FF0DFA72869F59400C94F5B /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FF0DFA82869F59400C94F5B /* HeroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCollectionViewCell.xib; sourceTree = "<group>"; };
 		7FF0DFAC2869F6ED00C94F5B /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -254,6 +262,10 @@
 			children = (
 				7F5850852869E67800AD0EEC /* LocationsViewController.swift */,
 				7F5850862869E67800AD0EEC /* LocationsViewController.xib */,
+				7F7525FD286F35B0001A98AF /* LocationsView.swift */,
+				7F7525FF286F35BB001A98AF /* LocationsModel.swift */,
+				7F752601286F3710001A98AF /* Location.swift */,
+				7F752603286F3B18001A98AF /* AnimalAnnotationView.swift */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -440,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F58507B2869E63E00AD0EEC /* BrowseViewController.swift in Sources */,
+				7F752602286F3710001A98AF /* Location.swift in Sources */,
 				FC465E8B286ADD1B000F304B /* Watch.swift in Sources */,
 				7FF0DFB12869FA7D00C94F5B /* Constants.swift in Sources */,
 				FC5BA00F286C4824002BCFFD /* DetailsView.swift in Sources */,
@@ -451,6 +464,7 @@
 				7F5850A12869F02900AD0EEC /* Animal.swift in Sources */,
 				7F3A682D286B3C240025418B /* GalleryModel.swift in Sources */,
 				FC465E89286ADBD9000F304B /* WatchModel.swift in Sources */,
+				7F752600286F35BB001A98AF /* LocationsModel.swift in Sources */,
 				FC5BA002286C2080002BCFFD /* DetailsViewController.swift in Sources */,
 				FC465E86286AD88F000F304B /* VideoCollectionViewCell.swift in Sources */,
 				7F5850872869E67800AD0EEC /* LocationsViewController.swift in Sources */,
@@ -463,6 +477,8 @@
 				7F3A6837286B3C750025418B /* BannerCollectionViewCell.swift in Sources */,
 				FC5BA00C286C3CDD002BCFFD /* QuotesCollectionViewCell.swift in Sources */,
 				7F3A6829286B3C1A0025418B /* GalleryViewController.swift in Sources */,
+				7F7525FE286F35B0001A98AF /* LocationsView.swift in Sources */,
+				7F752604286F3B18001A98AF /* AnimalAnnotationView.swift in Sources */,
 				7F58509F2869EFDC00AD0EEC /* Bundle+Extension.swift in Sources */,
 				7FF0DFA92869F59400C94F5B /* HeroCollectionViewCell.swift in Sources */,
 				7F58509D2869EEAA00AD0EEC /* BrowseView.swift in Sources */,
