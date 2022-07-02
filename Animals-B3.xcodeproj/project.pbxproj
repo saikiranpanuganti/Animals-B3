@@ -321,9 +321,9 @@
 			isa = PBXGroup;
 			children = (
 				7F3A6827286B3C1A0025418B /* GalleryViewController.swift */,
-				7F3A6828286B3C1A0025418B /* GalleryViewController.xib */,
 				7F3A682B286B3C240025418B /* GalleryModel.swift */,
 				7F3A682C286B3C240025418B /* GalleryView.swift */,
+				7F3A6828286B3C1A0025418B /* GalleryViewController.xib */,
 				7F3A6834286B3C660025418B /* BannerCell */,
 				7F3A682F286B3C2F0025418B /* AnimalImagesCell */,
 			);

@@ -29,6 +29,7 @@ class BannerCollectionViewCell: UICollectionViewCell {
         animalImage.image = UIImage(named: animal.image ?? "" )
     }
     
+    
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         if sender.value < 0.5 {
             sender.value = 0

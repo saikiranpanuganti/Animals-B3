@@ -12,11 +12,16 @@ enum CellsPerRow {
     case three
     case four
 }
+protocol GalleryViewDelegate {
+    func animalSelected(animal: Animal?)
+}
 
 class GalleryView: UIView {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var cellPerRow: CellsPerRow = .three
+    
+    var delegate : GalleryViewDelegate?
     
     var animals: Animals = []
     var imgIndex = 0
@@ -75,7 +80,9 @@ extension GalleryView: UICollectionViewDelegate {
 
 extension GalleryView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.section == 1 {
+        if indexPath.section == 0 {
+            delegate?.animalSelected(animal: animals[imgIndex])
+        }else if indexPath.section == 1 {
             imgIndex = indexPath.row
             collectionView.reloadData()
         }
