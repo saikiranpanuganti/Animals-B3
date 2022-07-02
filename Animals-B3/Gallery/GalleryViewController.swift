@@ -15,12 +15,19 @@ class GalleryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        galleryView.delegate = self
+        
         galleryView.setUpUI()
         galleryModel.getData()
         
         let animalsData = galleryModel.animals
         galleryView.animals = animalsData
-        
-        
+    }
+}
+extension GalleryViewController:GalleryViewDelegate{
+    func animalSelected(animal : Animal?) {
+        let detailsVc = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+        detailsVc.detailsModel.animal = animal
+        navigationController?.pushViewController(detailsVc, animated: true)
     }
 }
